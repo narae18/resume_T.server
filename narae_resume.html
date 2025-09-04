@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="서버 신입 개발자 이력서 템플릿 (Toss 컬러 테마)" />
+  <title>[TODO] 이름 – 서버 신입 개발자</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0; font-family:"Inter","Noto Sans KR",sans-serif; background:#0c1017; color:#e7ebf3; line-height:1.6}
+    a{color:inherit; text-decoration:none}
+    img,video{max-width:100%; display:block}
+    :root{
+      --toss-blue:#0064FF;
+      --toss-gray:#202632;
+      --card:#121825;
+      --border:rgba(255,255,255,.08);
+      --muted:#9aa6b2;
+    }
+    .wrap{max-width:900px; margin:0 auto; padding:28px 20px 80px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px; margin-bottom:22px}
+    h2{margin:0 0 14px; font-size:20px; font-weight:600}
+    .bar{height:3px; width:56px; background:var(--toss-blue); border-radius:6px; margin:6px 0 18px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px}
+    .tag{font-size:13px; padding:6px 10px; border:1px solid var(--border); border-radius:999px; background:#0f1422}
+    .item{padding:14px; border:1px solid var(--border); background:#0f1422; border-radius:14px; margin-bottom:12px}
+    .item .title{font-size:16px; font-weight:500}
+    .item .sub{font-size:13px; color:var(--muted)}
+    footer{margin-top:28px; font-size:13px; color:var(--muted)}
+
+    /* Light theme */
+    html[data-theme="light"] body{background:#ffffff; color:#0b1220}
+    html[data-theme="light"] .card{background:#ffffff; border-color:rgba(0,0,0,.08)}
+    html[data-theme="light"] .item{background:#fafbff}
+    html[data-theme="light"] .tag{background:#f3f5f9; color:#0b1220}
+    @media print{
+      :root{--card:#ffffff; --border:#ddd}
+      body{background:#fff; color:#111}
+    }
+  </style>
+  <style>
+    /* One-page single-column layout */
+    .wrap.grid{display:block}
+    aside.sticky{position:static; top:auto}
+    main.grid{display:block}
+    main.grid > *{margin-bottom:22px}
+    main.grid > *:last-child{margin-bottom:0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 개인정보 + 연락처 -->
+    <section class="card">
+      <video autoplay muted loop playsinline style="width:100%; border-radius:12px; margin-bottom:16px">
+        <source src="Toss_Logo_Motion_Light_1920.mp4" type="video/mp4" />
+      </video>
+      <h1 style="margin:0; font-size:26px">[TODO] 이름</h1>
+      <p>서버 신입 개발자 · 백엔드 · 클라우드</p>
+      <div>
+        <a href="mailto:[TODO]">[TODO] 이메일</a> · 
+        <a href="https://github.com/[TODO]" target="_blank">GitHub</a> · 
+        <a href="https://www.linkedin.com/in/[TODO]" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- 한 줄 소개 -->
+    <section class="card">
+      <h2>한 줄 소개</h2>
+      <div class="bar"></div>
+      <p>[TODO] 대규모 사용자를 고려한 견고한 서버 구조와 가시성 있는 운영을 지향합니다...</p>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section class="card">
+      <h2>기술 스택</h2>
+      <div class="bar"></div>
+      <div class="tags">
+        <span class="tag">Java · Spring Boot</span>
+        <span class="tag">REST API · JPA</span>
+        <span class="tag">MySQL · Redis</span>
+        <span class="tag">AWS EC2 · RDS · S3</span>
+        <span class="tag">CI/CD · GitHub Actions</span>
+      </div>
+    </section>
+
+    <!-- 프로젝트 -->
+    <section class="card">
+      <h2>프로젝트</h2>
+      <div class="bar"></div>
+      <div class="item">
+        <div class="title">심혈관 질환 관리 서비스</div>
+        <div class="sub">Spring Boot · AWS · MySQL</div>
+        <p>PRS 기반 리스크 점수 API, 매거진 추천, 이미지 업로드 전환...</p>
+      </div>
+      <div class="item">
+        <div class="title">KoGPT2 기반 의료 Q&A 챗봇</div>
+        <div class="sub">Flask · EC2 · RDS</div>
+        <p>모델 서버 배포 중 메모리 제약을 개선, 응답 속도 3.2s→1.1s...</p>
+      </div>
+    </section>
+
+    <!-- 경험 -->
+    <section class="card">
+      <h2>경험</h2>
+      <div class="bar"></div>
+      <div class="item">
+        <div class="title">산학협력 프로젝트 서버 개발</div>
+        <div class="sub">6개월</div>
+        <p>클라우드 인프라 설계, CI/CD, 로그·모니터링 구축...</p>
+      </div>
+    </section>
+
+    <!-- 학력/자격 -->
+    <section class="card">
+      <h2>학력 · 자격</h2>
+      <div class="bar"></div>
+      <div class="item">
+        <div class="title">[TODO] 대학교 컴퓨터공학과</div>
+        <div class="sub">졸업(예정) · GPA [TODO]</div>
+      </div>
+      <div class="item">
+        <div class="title">자격/수상</div>
+        <div class="sub">AWS Cloud Practitioner, SQLD, 교내 캡스톤 우수상</div>
+      </div>
+    </section>
+
+    <!-- 색상 가이드 -->
+    <section class="card">
+      <h2>색상 가이드</h2>
+      <div class="bar"></div>
+      <div class="tags">
+        <span class="tag" style="background:#0064FF">#0064FF Toss Blue</span>
+        <span class="tag" style="background:#202632">#202632 Toss Gray</span>
+      </div>
+    </section>
+
+
+  </div>
+
+  <script>
+    // Theme toggle
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme')||'dark';
+    if(saved==='light') html.setAttribute('data-theme','light');
+
+    // Keyboard shortcut: press T to toggle theme
+    document.addEventListener('keydown',e=>{
+      if(e.key==='t'||e.key==='T'){
+        const isLight=html.getAttribute('data-theme')==='light';
+        if(isLight){html.removeAttribute('data-theme');localStorage.setItem('theme','dark');}
+        else{html.setAttribute('data-theme','light');localStorage.setItem('theme','light');}
+      }
+    });
+
+    // PDF 저장: Ctrl+P (혹은 브라우저 메뉴) → Save as PDF
+  </script>
+  <script>
+    (function(){
+      const wrap = document.querySelector('.wrap');
+      const aside = document.querySelector('aside.sticky');
+      const main = document.querySelector('main');
+      if(!wrap || !main) return;
+
+      const brand = aside?.querySelector('section.card.brand');
+      const contact = document.getElementById('contact');
+      const intro = main.querySelector('section.card.pad:not([id])'); // "한 줄 소개"
+      const skills = document.getElementById('skills');
+      const projects = document.getElementById('projects');
+      const experience = document.getElementById('experience');
+      const education = document.getElementById('education');
+      const colorGuide = Array.from(aside?.querySelectorAll('section.card.pad')||[]).find(s=>s.querySelector('h2')?.textContent.trim().includes('색상 가이드'));
+      const coreAside = Array.from(aside?.querySelectorAll('section.card.pad')||[]).find(s=>s.querySelector('h2')?.textContent.trim().includes('핵심 역량'));
+      const footer = main.querySelector('footer');
+
+      if(brand){ main.insertAdjacentElement('afterbegin', brand); }
+      if(contact){ (brand||main).insertAdjacentElement('afterend', contact); }
+      if(intro){ (contact||brand||main.firstChild).insertAdjacentElement('afterend', intro); }
+      if(skills){ (intro||contact||brand||main.firstChild).insertAdjacentElement('afterend', skills); }
+      if(coreAside){ (skills||intro||contact||brand).insertAdjacentElement('afterend', coreAside); }
+      if(projects){ (coreAside||skills||intro||contact||brand).insertAdjacentElement('afterend', projects); }
+      if(experience){ (projects||coreAside||skills).insertAdjacentElement('afterend', experience); }
+      if(education){ (experience||projects).insertAdjacentElement('afterend', education); }
+      if(colorGuide){ (education||experience||projects||skills).insertAdjacentElement('afterend', colorGuide); }
+      if(footer){ main.appendChild(footer); }
+
+      if(aside){ aside.style.display='none'; }
+    })();
+  </script>
+</body>
+</html>
